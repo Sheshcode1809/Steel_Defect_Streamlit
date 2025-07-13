@@ -1,14 +1,19 @@
-streamlit==1.40.1
-opencv-python==4.8.0.76
-tensorflow-cpu==2.15.0
-numpy==1.26.4
-setuptools==70.0.0
-protobuf==3.20.3
-Pillow==10.3.0
-pandas==2.2.2
-keras==2.15.0
-h5py==3.11.0
-scikit-learn==1.4.2
-matplotlib==3.8.4
-plotly==5.22.0               # Added Plotly support
-kaleido==0.2.1              # Required for Plotly static image export
+tensorflow
+protobuf
+numpy
+pandas
+opencv-python
+scikit-learn
+matplotlib
+plotly
+Pillow
+streamlit
+validators
+gitpython
+altair
+typing-extensions
+requests
+watchdog
+blinker
+tornado
+fpdf
