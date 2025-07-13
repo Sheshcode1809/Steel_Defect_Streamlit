@@ -117,7 +117,11 @@ See `requirements.txt` for the complete list.
 
 ## 🧑‍💻 Authors
 
-Developed by **Shesh Kanade**  
+Developed by 
+**Shesh Kanade**
+**Harsh Prajapati**
+**Yashkumar Desai**
+**Rutvik Sindhav**
 For academic purposes and AI-based defect detection research.
 
 ---
