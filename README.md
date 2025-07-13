@@ -19,6 +19,7 @@ Steel_Defect_Streamlit_final/
 ├── users.db                    # SQLite database for users and history
 ├── data/
 │   └── sample_images/          # Test images for prediction
+
 ```
 
 ---
@@ -39,8 +40,8 @@ Steel_Defect_Streamlit_final/
 
 If you're using the zip file:
 ```bash
-unzip Steel_Defect_Streamlit_final.zip
-cd Steel_Defect_Streamlit_final
+unzip Steel_Defect_Streamlit.zip
+cd Steel_Defect_Streamlit
 ```
 
 ### 2. Set up Virtual Environment (Optional)
@@ -92,15 +93,24 @@ The app will open in your browser at `http://localhost:8501`.
 
 Major dependencies include:
 
-- `streamlit`
+- `tensorflow`
+- `protobuf`
 - `numpy`
 - `pandas`
 - `opencv-python`
-- `Pillow`
-- `tensorflow`
 - `scikit-learn`
 - `matplotlib`
 - `plotly`
+- `Pillow`
+- `streamlit`
+- `validators`
+- `gitpython`
+- `altair`
+- `typing-extensions`
+- `requests`
+- `watchdog`
+- `blinker`
+- `tornado`
 - `fpdf`
 
 See `requirements.txt` for the complete list.
@@ -111,7 +121,6 @@ See `requirements.txt` for the complete list.
 
 - The model weights should be loaded within `model.py`. Ensure `model.pth` is placed correctly if loading external weights.
 - The `users.db` SQLite database stores user credentials and prediction history.
-- Custom CSS (`style.css`) enhances the appearance of the Streamlit interface.
 
 ---
 
