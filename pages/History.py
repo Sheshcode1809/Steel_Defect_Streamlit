@@ -8,7 +8,7 @@ if not st.session_state.get("logged_in"):
 
 # Page configuration
 st.set_page_config(page_title="Prediction History", layout="wide")
-st.markdown("### 🧾 Your Prediction History")
+st.markdown("### 🧾History")
 
 # Check if user is logged in
 if "username" not in st.session_state:
@@ -27,7 +27,10 @@ if not history:
     st.info("No prediction history found for your account.")
 else:
     df = pd.DataFrame(history, columns=["Filename", "Prediction", "Confidence"])
-    df["Confidence"] = (df["Confidence"]).round(2).astype(str) + '%'
+    
+    df["Confidence"] = pd.to_numeric(df["Confidence"], errors='coerce')  # Convert to float, NaNs if failed
+    df["Confidence"] = df["Confidence"].round(2).astype(str) + '%'
+
     
     df.index = df.index + 1  # Start index from 1
     st.dataframe(df, use_container_width=True)
